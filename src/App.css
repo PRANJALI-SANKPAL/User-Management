@@ -1,0 +1,41 @@
+* {
+  background-color: #e6e3f7;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #3A0360;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.user-card button {
+  margin-right: 5px;
+  background-color: #7063BF;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+  background-color: #6153be;
+}
+
+
+.error {
+  background-color: #cfc7f7;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
