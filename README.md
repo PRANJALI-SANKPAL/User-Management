@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# User-Management
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to Run?
 
-In the project directory, you can run:
+First download the project and In the project directory, you can run:
+
+### `npm install`
+
+Install all the necessary libraries.
 
 ### `npm start`
 
@@ -19,52 +23,27 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## `Project Information`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a ReactJS user management application. The application allows users to view, add, edit, and delete user information.
+To achieve this functionality, I have created three components in the ReactJS application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### AddUserForm:
+The AddUserForm component is responsible for adding new users to the system. It includes input fields for the user's name, email address, and phone number. I have implemented form validation to ensure that all fields are filled out correctly. For example, the name field should not be empty and should not contain any numeric values. The email field should be in a valid email format. To generate unique IDs for each user, I have used the uuid library.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### EditUserForm:
+The EditUserForm component allows users to edit the information of existing users. It displays the current user's details and provides input fields to update the name, email, and phone number. Similar to the AddUserForm, form validation is implemented to ensure that the fields are filled correctly. When the form is submitted, the user's information is updated in the system.
 
-### `npm run eject`
+### UserList:
+The UserList component displays a list of users on the main page. Each user is represented by a card, which includes their name, email, and phone number. I have used the map function to iterate over the user data stored as objects and dynamically render the user cards. The UserList component also provides functionality to edit and delete users. Users can click on the "Edit" button on a card to open the EditUserForm and make changes to the user's details. The "Delete" button allows users to remove a user from the list.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Additionally, I have added some responsive and visually appealing CSS to enhance the overall look and feel of the application. The user interface is designed to be user-friendly, with clear form fields, intuitive buttons, and a clean layout. The CSS styles have been applied consistently across the components to maintain a cohesive design.
+In summary, the project demonstrates a ReactJS user management application with components for adding, editing, and deleting users. The application provides a smooth user experience and visually appealing interface, thanks to the implementation of the components and thoughtful CSS styling.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
