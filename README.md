@@ -38,6 +38,7 @@ The EditUserForm component allows users to edit the information of existing user
 The UserList component displays a list of users on the main page. Each user is represented by a card, which includes their name, email, and phone number. I have used the map function to iterate over the user data stored as objects and dynamically render the user cards. The UserList component also provides functionality to edit and delete users. Users can click on the "Edit" button on a card to open the EditUserForm and make changes to the user's details. The "Delete" button allows users to remove a user from the list.
 
 Additionally, I have added some responsive and visually appealing CSS to enhance the overall look and feel of the application. The user interface is designed to be user-friendly, with clear form fields, intuitive buttons, and a clean layout. The CSS styles have been applied consistently across the components to maintain a cohesive design.
+
 In summary, the project demonstrates a ReactJS user management application with components for adding, editing, and deleting users. The application provides a smooth user experience and visually appealing interface, thanks to the implementation of the components and thoughtful CSS styling.
 
 
